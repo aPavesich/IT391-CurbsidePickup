@@ -1,7 +1,14 @@
 .carousel-inner{
     height: 425px;
-    object-fit: contain;
+    object-fit: fill;
 }
 #section1{
-    
+    padding-left: 7%;
+    padding-right: 7%;
+    text-align: center;
+}
+
+.paragraph{
+    padding-left: 18%;
+    padding-right: 18%;
 }
