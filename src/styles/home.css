@@ -16,7 +16,7 @@
     padding-left: 13%;
     padding-right: 13%;
 }
-div.container{
+.containers{
     text-align: center;
 }
 .ul{
@@ -26,4 +26,18 @@ div.container{
     list-style-type:decimal;
     display: inline-block;
     text-align: left;
+}
+
+#section2{
+    background-color: #7D83FF;
+}
+
+.imgs{
+float: right;
+max-width: 600px;
+}
+
+.footer{
+    background-color: #85877C;
+    color: snow;
 }
