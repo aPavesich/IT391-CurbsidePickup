@@ -18,18 +18,25 @@
 </head>
 
 <body style="background-color: snow;">
-    <nav class="navbar navbar-expand-sm navbar-brand navbar container-fluid">
+    <nav class="navbar navbar-expand-md navbar-light container-fluid">
         <div class="container-fluid">
-            <a class="navbar-brand">Toy Company Name</a>
+            <a id="navbar-brand">Toy Company Name</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="collapseNav">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          <div class="collapse navbar-collapse" id="collapseNav">
             <ul class="navbar-nav">
                 <li class="nav-item"><a class="nav-link" href="#">Toys</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Games</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li> 
                 <button type="button" class="btn"><span class="bi bi-cart-fill"></span></button>
                 <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#myModal"><span class="bi bi-person-fill"></span></button>
-                <input class="form-control me-2" type="text" placeholder="Search">
-                <button class="btn" type="button">Search</button>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="text" placeholder="Search">
+                  <button class="btn" type="button">Search</button>
+                </form>
             </ul>
+          </div>
         </div>
     </nav>
     <div id="photoCarousel" class="carousel slide" data-bs-ride="carousel">
@@ -39,13 +46,13 @@
         <button type="button" data-bs-target="#photoCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
       </div>
       <div class="carousel-inner">
-        <div class="carousel-item active">
+        <div class="carousel-item active" data-bs-interval="15000">
           <img src="../public/pexels-karolina-grabowska-4968391.jpg" class="d-block w-100" alt="Ordering on a Computer" />
         </div>
-        <div class="carousel-item">
+        <div class="carousel-item" data-bs-interval="15000">
           <img src="../public/pexels-neosiam-681118.jpg" class="d-block w-100" alt="..." />
         </div>
-        <div class="carousel-item">
+        <div class="carousel-item" data-bs-interval="15000">
           <img src="../public/pexels-norma-mortenson-4391478.jpg" class="d-block w-100" alt="Curbside Pickup" />
         </div>
       </div>

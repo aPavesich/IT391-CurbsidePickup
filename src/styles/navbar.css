@@ -1,9 +1,9 @@
-.navbar-brand{
+#navbar-brand{
     font-family: 'Abril Fatface';
     color: black;
+    
 }
-
-.navbar {
+.navbar{
     color: black;
     background: #badfe7;
 }
@@ -14,3 +14,4 @@
 .nav-link:hover{
     color:aquamarine;
 }
+
