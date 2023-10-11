@@ -19,22 +19,14 @@
 .containers{
     text-align: center;
 }
-.ul{
-    padding-left: 17%;
-    padding-right: 17%;
-   
-    list-style-type:decimal;
-    display: inline-block;
-    text-align: left;
-}
 
 #section2{
-    background-color: #7D83FF;
+    background-color: #D6F9DD;
 }
 
 .imgs{
 float: right;
-max-width: 600px;
+
 }
 
 .footer{
