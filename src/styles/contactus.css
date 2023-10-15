@@ -5,6 +5,9 @@
     font-family: 'Times New Roman', Times, serif;  
  }
 
+ .container-new{
+   background-color: pink;
+ }
  .container{
     min-height: 100vh;
     background: pink;
