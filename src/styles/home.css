@@ -33,3 +33,22 @@ float: right;
     background-color: #9B9D9A;
     color: snow;
 }
+
+.lego{
+    padding-top: 5%;
+    padding-left: 2%;
+    padding-right: 2%;
+    text-align: center;
+    
+}
+
+.my_button{
+    background-color: seagreen; 
+    opacity: .6;
+    color: black;
+}
+.my_button:hover{
+    background-color: seagreen; 
+    opacity: 1;
+    color:snow;
+}
