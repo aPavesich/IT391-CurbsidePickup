@@ -1,4 +1,4 @@
-.imgs{
-    backdrop-filter: blur(10px);
-    max-width: 500px;
+.imgMain{
+    height: 425px;
+    object-fit: fill;
 }
