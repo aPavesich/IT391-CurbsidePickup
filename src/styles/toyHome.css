@@ -1,0 +1,4 @@
+.imgs{
+    backdrop-filter: blur(10px);
+    max-width: 500px;
+}
