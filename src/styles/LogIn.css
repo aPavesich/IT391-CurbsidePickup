@@ -14,7 +14,10 @@ body {
     background-color: palevioletred;
     background-size: cover;
     background-position: center;
-
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
 }
 .wrapper {
     width: 420px ;
