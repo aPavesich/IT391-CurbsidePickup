@@ -2,8 +2,12 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .carousel-inner{
-    height: 425px;
+    height: 360px;
     object-fit: fill;
+}
+.carousel-caption{
+    padding-bottom: 48%;
+    color: aquamarine;
 }
 #section1{
     padding-left: 7%;
@@ -51,4 +55,24 @@ float: right;
     background-color: seagreen; 
     opacity: 1;
     color:snow;
+}
+
+.section3{
+    padding-top: 1%;
+    
+}
+
+.section3 h2{
+text-align: center;
+}
+.section3 h5 {
+    padding-left: 2%;
+    text-align: left;
+}
+
+.section3 p{
+    padding-left: 2%;
+    padding-right: 3%;
+    display: inline-block;
+    text-align: left;
 }
