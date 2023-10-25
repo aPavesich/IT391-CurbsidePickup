@@ -1,8 +1,28 @@
-.imgMain{
-    height: 425px;
-    object-fit: fill;
+.body1{
+    padding: 3%;
 }
 
+
 .box1{
-    background-color: lightcoral;
+padding: 8%;
+text-align: center;
+
+}
+.box2{
+background-color: lightblue;
+padding: 8%;
+text-align: center;
+}
+
+.box3{
+ background-color: lightgoldenrodyellow;
+ padding: 8%;
+ text-align: center;
+
+}
+
+.box4{
+    background-color: orchid;
+    padding: 8%;
+    text-align: center;
 }
