@@ -25,7 +25,7 @@
 }
 
 #section2{
-    background-color: #D6F9DD;
+    background-color: #e6d85e;
 }
 
 .imgs{
@@ -47,14 +47,14 @@ float: right;
 }
 
 .my_button{
-    background-color: seagreen; 
+    background-color: yellow; 
     opacity: .6;
     color: black;
 }
 .my_button:hover{
-    background-color: seagreen; 
+    background-color: yellow; 
     opacity: 1;
-    color:snow;
+    color:black;
 }
 
 .section3{
