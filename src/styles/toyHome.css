@@ -2,7 +2,10 @@
     padding: 3%;
 }
 
-
+.masks{
+    background-color: blueviolet;
+    opacity: 20%;
+}
 .box1{
 padding: 8%;
 text-align: center;
