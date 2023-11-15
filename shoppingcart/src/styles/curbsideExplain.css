@@ -1,0 +1,12 @@
+.section1{
+    padding: 3%;
+    text-align: center;
+}
+.ul{
+    padding-left: 17%;
+    padding-right: 17%;
+   
+    list-style-type:decimal;
+    display: inline-block;
+    text-align: left;
+}
