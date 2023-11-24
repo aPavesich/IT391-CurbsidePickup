@@ -1,31 +1,35 @@
 <?php
 
 session_start();
-$status="";
-if (isset($_POST['action']) && $_POST['action']=="remove"){
-if(!empty($_SESSION["shopping_cart"])) {
-	foreach($_SESSION["shopping_cart"] as $key => $value) {
-		if($_POST["toy_id"] == $key){
-		unset($_SESSION["shopping_cart"][$key]);
-		$status = "<div class='box' style='color:red;'>
-		Product is removed from your cart!</div>";
-		}
-		if(empty($_SESSION["shopping_cart"]))
-		unset($_SESSION["shopping_cart"]);
-			}		
-		}
-}
+$status = "";
 
-if (isset($_POST['action']) && $_POST['action']=="change"){
-  foreach($_SESSION["shopping_cart"] as &$value){
-    if($value['toy_id'] === $_POST["toy_id"]){
-        $value['toy_quantity'] = $_POST["toy_quantity"];
-        break; // Stop the loop after we've found the product
+if (isset($_POST['action']) && $_POST['action'] == "remove") {
+    if (!empty($_SESSION["shopping_cart"])) {
+        foreach ($_SESSION["shopping_cart"] as $key => $value) {
+            if ($_POST["toy_id"] == $value['toy_id']) {
+                unset($_SESSION["shopping_cart"][$key]);
+                $status = "<div class='message' style='color:red;'>
+                    Product is removed from your cart!</div>";
+            }
+            if (empty($_SESSION["shopping_cart"])) {
+                unset($_SESSION["shopping_cart"]);
+            }
+        }
     }
 }
-  	
+
+if (isset($_POST['action']) && $_POST['action'] == "change") {
+    foreach ($_SESSION["shopping_cart"] as &$value) {
+        if ($value['toy_id'] === $_POST["toy_id"]) {
+            $value['toy_quantity'] = $_POST["toy_quantity"];
+            $status = "<div class='message' style='color:green;'>
+                Product quantity updated in your cart!</div>";
+            break; // Stop the loop after we've found the product
+        }
+    }
 }
 ?>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -38,7 +42,7 @@ if (isset($_POST['action']) && $_POST['action']=="change"){
     <!--Stylesheets-->
     <link rel="stylesheet" href="../src/styles/navbar.css" />
     <link rel="stylesheet" href="../src/styles/home.css" />
-    <link rel="sylesheet" href="./src/styles/cart.css" />
+    <link rel="sylesheet" href="../src/styles/cart.css" />
     <!--End of stylesheet-->
     <title>Cart</title>
 </head>
@@ -106,7 +110,7 @@ foreach ($_SESSION["shopping_cart"] as $product){
 <input type='hidden' name='toy_id' value="<?php echo $product["toy_id"]; ?>" />
 <input type='hidden' name='action' value="remove" />
 <br />
-<button type='submit' class=' remove btn btn-danger btns'>Remove Item</button>
+<button type='submit' class='remove btn btn-danger btns'>Remove Item</button>
 </form>
 </td>
 <td>

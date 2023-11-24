@@ -1,3 +1,5 @@
+*{font-family: 'Verdana', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+
 .cart{
 padding:5%;
 }
@@ -5,4 +7,8 @@ padding:5%;
 .btns{
     margin: 1%;
     padding: 3%;
+}
+
+.message{
+    padding: 30%;
 }
