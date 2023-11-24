@@ -1,0 +1,21 @@
+#navbar-brand{
+    color: black;
+    text-decoration:none;
+    
+}
+.navbar{
+    color: black;
+    background: #94d6ff;
+ 
+}
+
+.nav-link{
+    color: black;
+}
+.nav-link:hover{
+    color:mediumpurple;
+}
+
+.btn:hover{
+    color:mediumpurple;
+}
