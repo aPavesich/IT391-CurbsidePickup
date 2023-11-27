@@ -1,0 +1,17 @@
+*{
+    font-family: 'Verdana', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.btns{
+    margin: 1%;
+    padding: 3%;
+}
+
+.message{
+    padding: 30%;
+}
+
+.my_button:hover{
+    color:white;
+}

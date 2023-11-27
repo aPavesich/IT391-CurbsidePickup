@@ -58,7 +58,7 @@ if (isset($_POST['action']) && $_POST['action'] == "change") {
                 <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Toys</a>
                   <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="../src/toyHome.html">All Toys</a></li>
-                    <li><a class="dropdown-item" href="../src/index.php">Legos</a></li>
+                    <li><a class="dropdown-item" href="../src/lego.php">Legos</a></li>
                     <li><a class="dropdown-item" href="../src/nerf.php">Nerf</a></li>
                     <li><a class="dropdown-item" href="../src/hotwheels.php">Hot Wheels</a></li>
                     <li><a class="dropdown-item" href="../src/marvel.php">Marvel</a></li>
