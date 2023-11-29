@@ -1,3 +1,6 @@
+<!--Starts the session for this page as well as links the database connection file
+queries the products from the database-->
+
 <?php
 
 session_start();
@@ -19,7 +22,7 @@ $cartArray = array(
 	'toy_price'=>$price,
 	'toy_quantity'=>1)
 );
-
+//If the products is not already added to the cart, allows the product to be put into the shopping cart 
 if(empty($_SESSION["shopping_cart"])) {
 	$_SESSION["shopping_cart"] = $cartArray;
 	$status = "<div class='box'>Product is added to your cart!</div>";
@@ -52,6 +55,7 @@ if(empty($_SESSION["shopping_cart"])) {
     <title>Legos</title>
 </head>
 <body style="background-color: snow;">
+<!--code for navigation bar-->
 <nav class="navbar navbar-expand-md navbar-light ">
         <div class="container-fluid">
             <a id="navbar-brand" href="../src/index.html">Toy Store</a>
@@ -90,14 +94,16 @@ if(empty($_SESSION["shopping_cart"])) {
           </div>
         </div>
     </nav>
-
+    <div class="colors">
+    <img class="img-fluid imgs" src="../public/legos_banner.png" alt="Legos">
+    </div>
 
     <div class="container">
     <div class="row">
 
 <?php
 
-
+//Feteches the data, where the brand in the database is 'Lego'
 $result = mysqli_query($con,"SELECT * FROM `toys` WHERE `toy_brand` = 'Lego' ");
 while($row = mysqli_fetch_assoc($result)){
 		echo "
