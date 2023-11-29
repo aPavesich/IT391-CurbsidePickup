@@ -1,3 +1,5 @@
+
+<!-- allows the user to remove items from the cart -->
 <?php
 
 session_start();
@@ -17,7 +19,7 @@ if (isset($_POST['action']) && $_POST['action'] == "remove") {
         }
     }
 }
-
+//updates the quantity
 if (isset($_POST['action']) && $_POST['action'] == "change") {
     foreach ($_SESSION["shopping_cart"] as &$value) {
         if ($value['toy_id'] === $_POST["toy_id"]) {
@@ -47,6 +49,7 @@ if (isset($_POST['action']) && $_POST['action'] == "change") {
     <title>Cart</title>
 </head>
 <body style="background-color: snow;">
+<!-- Code for the navigation bar -->
     <nav class="navbar navbar-expand-md navbar-light ">
         <div class="container-fluid">
             <a id="navbar-brand" href="../src/index.html">Toy Store</a>
@@ -91,6 +94,7 @@ if (isset($_POST['action']) && $_POST['action'] == "change") {
 if(isset($_SESSION["shopping_cart"])){
     $total_price = 0;
 ?>	
+<!-- Table to display the items in the shopping cart -->
 <table class="table">
 <tbody>
 <tr>
@@ -117,7 +121,8 @@ foreach ($_SESSION["shopping_cart"] as $product){
 <form method='post' action=''>
 <input type='hidden' name='toy_id' value="<?php echo $product["toy_id"]; ?>" />
 <input type='hidden' name='action' value="change" />
-
+<!--allows user to pick the amount (with a limit of 8) of each product that they would like to purchase.
+This, connects to the quantity, and sets the quatity as the number selected-->
 <select name='toy_quantity' onchange="this.form.submit()">
 <option <?php if($product["toy_quantity"]==1) echo "selected";?> value="1">1</option>
 <option <?php if($product["toy_quantity"]==2) echo "selected";?> value="2">2</option>
@@ -130,9 +135,11 @@ foreach ($_SESSION["shopping_cart"] as $product){
 </select>
 </form>
 </td>
+<!-- shows the price of the toy after it has been multiplied by the quantiity-->
 <td><?php echo "$".$product["toy_price"]; ?></td>
 <td><?php echo "$".$product["toy_price"]*$product["toy_quantity"]; ?></td>
 </tr>
+<!-- displays the total price with all of the products added up -->
 <?php
 $total_price += ($product["toy_price"]*$product["toy_quantity"]);
 }
@@ -152,7 +159,7 @@ $total_price += ($product["toy_price"]*$product["toy_quantity"]);
 </div>
 
 <div style="clear:both;"></div>
-
+<!-- shows messages for remove or updated quantity in the cart-->
 <div class="message_box" style="text-align:center">
 <?php echo $status; ?>
 </div>
