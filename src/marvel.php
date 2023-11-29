@@ -95,7 +95,9 @@ if(empty($_SESSION["shopping_cart"])) {
         </div>
     </nav>
 
-
+    <div class="colors">
+      <img class="img-fluid imgs" src="../public/marvel_banner.png" alt="Legos">
+  </div>
     <div class="container">
     <div class="row">
 
