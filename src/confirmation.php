@@ -9,6 +9,7 @@
      <!--End of imports-->
     <title>Confirmation</title>
     <link rel="stylesheet" href="../src/styles/navbar.css" />
+    <link rel="stylesheet" href="../src/styles/confirm.css" />
 </head>
 <body style="background-color: snow;">
     <nav class="navbar navbar-expand-md navbar-light ">
@@ -49,7 +50,19 @@
           </div>
         </div>
     </nav>
-    
+    <div class="container-fluid center">
+    <h3> Thank you for your order </h3>
+</div>
+<br />
+    <div class="form-outline center" style="width: 22rem;">
+    <label class="form-label" for="typeNumber">Enter the parking spot number:</label>
+    <input min="1" max="10" type="number" id="typeNumber" class="form-control" />
+    <br />
+<a href="../src/index.html" class="btn btn-rounded btn-success">I got my order </a>
+    </div>
+
+
+</div>
 <!-- Javascript import with popper for dropdowns-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>

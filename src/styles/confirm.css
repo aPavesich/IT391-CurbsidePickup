@@ -2,18 +2,10 @@
     font-family: 'Verdana', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-
 .center{
+    margin: auto;
     width: 50%;
-margin:auto;
-    padding: 10px;
-    text-align: center;
-}
 
-.message{
-    padding: 30%;
-}
-
-.my_button:hover{
-    color:white;
+  padding: 10px;
+  text-align: center;
 }

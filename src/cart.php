@@ -30,6 +30,30 @@ if (isset($_POST['action']) && $_POST['action'] == "change") {
         }
     }
 }
+
+// if (isset($_POST['action']) && $_POST['action'] == "checkout") {
+//   // Insert data into the orderitems table
+//   $order_id = 1;
+//   foreach ($_SESSION["shopping_cart"] as $product) {
+//       $toy_id = $product["toy_id"];
+//       $toy_quantity = $product["toy_quantity"];
+//       $toy_name = $product["toy_name"];
+
+//       $insertItem = "INSERT INTO orderitems (order_id, toy_id, toy_name, toy_quantity) 
+//                       VALUES (:order_id, :toy_id, :toy_name, :toy_quantity)";
+//      $insertItem = $conn->prepare($insertItem);
+//      $insertItem->bindParam(':order_id', $order_id);
+//      $insertItem->bindParam(':toy_id', $toy_id);
+//      $insertItem->bindParam(':toy_name', $toy_name);
+//      $insertItem->bindParam(':toy_quantity', $toy_quantity);
+//      $insertItem->execute();
+//   }
+
+ 
+
+//   echo "<h3>Data was entered into the database</h3>";
+
+// }
 ?>
 
 <html lang="en">
@@ -157,14 +181,16 @@ $total_price += ($product["toy_price"]*$product["toy_quantity"]);
 	}
 ?>
 </div>
-
+<div class="container-fluid center">
+<a href="../src/checkout.php" ><button class="btn btn-success">Proceed to Payment</button></a>
+</div>
+<br />
 <div style="clear:both;"></div>
 <!-- shows messages for remove or updated quantity in the cart-->
 <div class="message_box" style="text-align:center">
 <?php echo $status; ?>
 </div>
 
-<a href="../src/checkout.php" ><button style="align:center" class="btn btn-success">Proceed to Payment</button></a>
 
  <!-- Javascript import with popper for dropdowns-->
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
