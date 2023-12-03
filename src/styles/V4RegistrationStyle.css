@@ -1,0 +1,137 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Verdana', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(94, 155, 107);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+.wrapper {
+    width: 420px ;
+    background:  rgb(159, 215, 171);
+    border: 2xp solid  rgba(225, 225, 225, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 25px 25px 10px rgba(0, 0, 0,.2);
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.wrapper h1{
+    font-size: 36px;
+    text-align: center;
+    color: #333;
+}
+
+.wrapper h2{
+    font-size: 16px;
+    text-align: center;
+}
+
+.wrapper .input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 16px 0;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: #e0dfdf;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(225, 225, 225, .2);
+    border-radius: 40px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, .1);
+    font-size: 16px;
+    color: #333;
+    padding: 20px 45px 20px 20px;
+}
+.input-box input::placeholder{
+    color: #333;
+
+}
+
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.wrapper .remember-forgot{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+
+.remember-forgot label input{
+    accent-color: #fff;
+    margin-right: 3px;
+}
+.remember-forgot a {
+    color: #fff;
+}
+
+.remember-forgot a:hover {
+    text-decoration:  underline;
+}
+.wrapper .btn {
+    width: 100%;
+    height: 45px;
+    background:  #ffffff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 50px 50px 70px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600000;
+}
+
+.wrapper .btn2 {
+    width: 100%;
+    height: 25px;
+    background:  #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 1px;
+    color: #333;
+    font-weight: 400;
+}
+
+.wrapper .register-link{
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.register-link p a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover{
+    text-decoration: underline;
+}
