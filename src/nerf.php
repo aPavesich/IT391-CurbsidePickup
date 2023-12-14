@@ -2,7 +2,6 @@
 queries the products from the database-->
 
 <?php
-
 session_start();
 include('db.php');
 $status="";
@@ -13,7 +12,6 @@ $row = mysqli_fetch_assoc($result);
 $name = $row['toy_name'];
 $code = $row['toy_id'];
 $price = $row['toy_price'];
-
 
 $cartArray = array(
 	$code=>array(

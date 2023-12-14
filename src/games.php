@@ -92,7 +92,7 @@ if(empty($_SESSION["shopping_cart"])) {
     </nav>
 
     <div class="colors">
-      <img class="img-fluid imgs" src="../public/games.png" alt="Legos">
+      <img class="img-fluid imgs" src="../public/Games.png" alt="Nintendo">
   </div>
     <div class="container">
     <div class="row">
